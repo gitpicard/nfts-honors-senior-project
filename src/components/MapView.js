@@ -1,5 +1,5 @@
 import React from 'react';
-import Aircraft from './Aircraft';
+import Aircraft from './AircraftView';
 
 class Map extends React.Component {
   render() {

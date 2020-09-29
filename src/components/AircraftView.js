@@ -23,7 +23,13 @@ class ConnectedAircraft extends React.Component {
     return (
       <Draggable bounds='parent' onStop={(e, data) => this.dragged(e, data)}>
         <div className="Draggable">
-          <img className="Draggable-Icon" alt='aircraft' src={process.env.PUBLIC_URL + '/images/aircraft.png'} width='32pt' height='32pt' />
+          <img
+            className="Draggable-Icon"
+            alt='aircraft'
+            src={process.env.PUBLIC_URL + '/images/aircraft.png'}
+            width='32pt'
+            height='32pt'
+          />
         </div>
       </Draggable>
     )

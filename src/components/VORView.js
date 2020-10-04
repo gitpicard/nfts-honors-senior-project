@@ -12,6 +12,7 @@ function mapDispatchToProps(dispatch) {
 class ConnectedVOR extends React.Component {
   constructor() {
     super();
+
     this.state = {
       x: 0,
       y: 0,
@@ -36,7 +37,7 @@ class ConnectedVOR extends React.Component {
   }
 
   dragged(e, data) {
-    this.setState({ x: data.x, y: data.y, frequency: this.state.frequency });
+    this.setState({ x: data.x, y: data.y, index: this.props.index });
     this.props.moveVor(this.state);
   }
 }

@@ -7,7 +7,7 @@ class Map extends React.Component {
     return (
       <div className="Map">
         <Aircraft />
-        <VOR />
+        <VOR index={1} />
       </div>
     );
   }

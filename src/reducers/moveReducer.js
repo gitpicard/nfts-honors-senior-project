@@ -16,7 +16,7 @@ function getCdiDeflection(aircraft, vor, obs) {
     let isFrom = deflection >= 90 || deflection <= -90;
 
     return {
-        deflection: -Math.max(Math.min(deflection, 6), -6),
+        deflection: -Math.max(Math.min(deflection, 12), -12),
         isFrom: isFrom,
     };
 }

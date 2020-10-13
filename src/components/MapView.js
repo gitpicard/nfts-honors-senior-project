@@ -8,6 +8,7 @@ class Map extends React.Component {
       <div className="Map">
         <Aircraft />
         <VOR index={1} />
+        <VOR index={2} />
       </div>
     );
   }

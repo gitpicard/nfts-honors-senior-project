@@ -1,5 +1,6 @@
 import React from 'react';
 import Map from './components/MapView';
+import CDI from './components/CDIView';
 import './App.css';
 
 class App extends React.Component {
@@ -7,6 +8,8 @@ class App extends React.Component {
     return (
       <div className='App'>
         <Map />
+        <CDI nav='nav1' />
+        <CDI nav='nav2' />
       </div>
     );
   }
